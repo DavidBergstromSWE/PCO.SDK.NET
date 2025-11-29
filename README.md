@@ -1,1 +1,1 @@
-﻿.NET library wrapper for the PCO SDK from Excelitas-PCO, where native code is written in C++.
+﻿.NET library wrapper for the PCO SDK from Excelitas-PCO, with unmanaged code (written in C++) invoked using P/Invoke.
