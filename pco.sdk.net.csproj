@@ -18,12 +18,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="PCO_Conv.dll">
+    <ContentWithTargetPath Include="src\SDK\lib\SC2_Cam.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="SC2_Cam.dll">
+      <TargetPath>SC2_Cam.dll</TargetPath>
+    </ContentWithTargetPath>
+  </ItemGroup>
+  <ItemGroup>
+    <ContentWithTargetPath Include="src\ConvertSDK\lib\PCO_Conv.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
+      <TargetPath>PCO_Conv.dll</TargetPath>
+    </ContentWithTargetPath>
   </ItemGroup>
 
 </Project>
