@@ -9,8 +9,8 @@ public class GetLastError
     // Commmon error messages                                                                                 //
     //========================================================================================================//
 
-    static readonly string[] PCO_ERROR_COMMON_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_COMMON_TXT =
+    [
       "No error.",                                     // 0x00000000  PCO_NOERROR
       "Function call with wrong parameter.",           // 0xA0000001  PCO_ERROR_WRONGVALUE 
       "Handle is invalid.",                            // 0xA0000002  PCO_ERROR_INVALIDHANDLE 
@@ -26,10 +26,10 @@ public class GetLastError
       "Wrong library version.",                        // 0xA0000011  PCO_ERROR_LIBRARYVERSION
       "Wrong camera version",                          // 0xA0000012  PCO_ERROR_CAMERAVERSION
       "Option is not available"                        // 0xA0000013  PCO_ERROR_NOTAVAILABLE                      
-    };
+    ];
 
-    static readonly string[] PCO_ERROR_DRIVER_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_DRIVER_TXT =
+    [
       "No error.",                                     // 0x00002000  PCO_NOERROR
       "Initialization failed; no camera connected.",   // 0x80002001  PCO_ERROR_DRIVER_NOTINIT     
       "",                                              // 0x80002002    
@@ -76,7 +76,7 @@ public class GetLastError
       "Camera head power down.",                       // 0x80002031  PCO_ERROR_DRIVER_HEAD_POWER_DOWN
       "Camera busy.",                                   // 0x80002032  PCO_ERROR_DRIVER_CAMERA_BUSY
       "Camera busy (Buffers pending)."                 // 0x80002033  PCO_ERROR_DRIVER_BUFFERS_PENDING
-    };
+    ];
 
     //const int DRIVER_MSGNUM = sizeof(PCO_ERROR_DRIVER_TXT) / sizeof(PCO_ERROR_DRIVER_TXT[0]);
 
@@ -85,8 +85,8 @@ public class GetLastError
     // Error messages for errors in SDK DLL                                                                   //
     //========================================================================================================//
 
-    static readonly string[] PCO_ERROR_SDKDLL_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_SDKDLL_TXT =
+    [
       "No error.",                                     // 0x00000000  PCO_NOERROR
       "wSize of an embedded buffer is to small.",      // 0x80003001  PCO_ERROR_SDKDLL_NESTEDBUFFERSIZE   
       "wSize of a buffer is to small.",                // 0x80003002  PCO_ERROR_SDKDLL_BUFFERSIZE   
@@ -107,7 +107,7 @@ public class GetLastError
       "A DLL could not be found, due to div by zero.", // 0x80003011  PCO_ERROR_SDKDLL_DLLNOTFOUND_DIVZERO
       "Buffer is already queued.",                     // 0x80003012  PCO_ERROR_SDKDLL_BUFFERALREADYQUEUED
       "Buffer is not queued ."                         // 0x80003013  PCO_ERROR_SDKDLL_BUFFERNOTQUEUED
-    };
+    ];
 
     //const int SDKDLL_MSGNUM = sizeof(PCO_ERROR_SDKDLL_TXT) / sizeof(PCO_ERROR_SDKDLL_TXT[0]);
 
@@ -116,8 +116,8 @@ public class GetLastError
     // Application error messages                                                                             //
     //========================================================================================================//
 
-    static readonly string[] PCO_ERROR_APPLICATION_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_APPLICATION_TXT =
+    [
       "No error.",                                     // 0x00000000  PCO_NOERROR
       "Error while waiting for a picture.",            // 0x80004001  PCO_ERROR_APPLICATION_PICTURETIMEOUT   
       "Error while saving file.",                      // 0x80004002  PCO_ERROR_APPLICATION_SAVEFILE 
@@ -129,7 +129,7 @@ public class GetLastError
       "Started Math with different resolution than reference.",// 0x80004007 PCO_ERROR_APPLICATION_WRONGRES
       "Disk full.",                                    // 0x80004008  PCO_ERROR_APPLICATION_DISKFULL
       "Error setting values to camera.",               // 0x80004009  PCO_ERROR_APPLICATION_SET_VALUES
-    };
+    ];
 
     //const int APPLICATION_MSGNUM = sizeof(PCO_ERROR_APPLICATION_TXT) / sizeof(PCO_ERROR_APPLICATION_TXT[0]);
 
@@ -139,8 +139,8 @@ public class GetLastError
     // Firmware error messages                                                                                //
     //========================================================================================================//
 
-    static readonly string[] PCO_ERROR_FIRMWARE_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_FIRMWARE_TXT =
+    [
       "No error.",                                     // 0x00000000  PCO_NOERROR
       "Timeout in telegram.",                          // 0x80001001  PCO_ERROR_FIRMWARE_TELETIMEOUT   
       "Wrong checksum in telegram.",                   // 0x80001002  PCO_ERROR_FIRMWARE_WRONGCHECKSUM   
@@ -270,7 +270,7 @@ public class GetLastError
 
       "External modulation frequency out of range.",   // 0x80001100  PCO_ERROR_FIRMWARE_FLICAM_EXT_MOD_OUT_OF_RANGE
       "Sync PLL not locked.",                          // 0x80001101  PCO_ERROR_FIRMWARE_FLICAM_SYNC_PLL_NOT_LOCKED
-    };
+    ];
 
     //const int FIRMWARE_MSGNUM = sizeof(PCO_ERROR_FIRMWARE_TXT) / sizeof(PCO_ERROR_FIRMWARE_TXT[0]);
 
@@ -286,42 +286,42 @@ public class GetLastError
     // warnings:
     /////////////////////////////////////////////////////////////////////
 
-    static readonly string[] PCO_ERROR_FWWARNING_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_FWWARNING_TXT =
+    [
       "No error.",
       "Function is already on.",                       // 0xC0001001 PCO_WARNING_FIRMWARE_FUNCALON     
       "Function is already off.",                      // 0xC0001002 PCO_WARNING_FIRMWARE_FUNCALOFF     
       "High temperature.",                             // 0xC0001003 PCO_WARNING_FIRMWARE_HIGH_TEMPERATURE
       "Offset regulation is not locked.",              // 0xC0001004 PCO_WARNING_FIRMWARE_OFFSET_NOT_LOCKED       
-    };
+    ];
 
     //const int FWWARNING_MSGNUM = sizeof(PCO_ERROR_FWWARNING_TXT) / sizeof(PCO_ERROR_FWWARNING_TXT[0]);
 
-    static readonly string[] PCO_ERROR_DRIVERWARNING_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_DRIVERWARNING_TXT =
+    [
       "No error.",                                     // 0x00000000  PCO_NOERROR
-    };
+    ];
 
     //const int DRIVERWARNING_MSGNUM = sizeof(PCO_ERROR_DRIVERWARNING_TXT) / sizeof(PCO_ERROR_DRIVERWARNING_TXT[0]);
 
 
-    static readonly string[] PCO_ERROR_SDKDLLWARNING_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_SDKDLLWARNING_TXT =
+    [
       "No error.",                                     // 0x00000000  PCO_NOERROR
       "Buffers are still allocated.",                  // 0xC0003001  PCO_WARNING_SDKDLL_BUFFER_STILL_ALLOKATED
       "No Images are in the board buffer.",            // 0xC0003002  PCO_WARNING_SDKDLL_NO_IMAGE_BOARD
       "value change when testing COC.",                // 0xC0003003  PCO_WARNING_SDKDLL_COC_VALCHANGE
       "string buffer to short for replacement."        // 0xC0003004  PCO_WARNING_SDKDLL_COC_STR_SHORT
-    };
+    ];
 
     //const int SDKDLLWARNING_MSGNUM = sizeof(PCO_ERROR_SDKDLLWARNING_TXT) / sizeof(PCO_ERROR_SDKDLLWARNING_TXT[0]);
 
-    static readonly string[] PCO_ERROR_APPLICATIONWARNING_TXT = new string[]
-    {
+    static readonly string[] PCO_ERROR_APPLICATIONWARNING_TXT =
+    [
       "No error.",                                     // 0x00000000  PCO_NOERROR
       "Memory recorder buffer is full.",               // 0xC0004001  PCO_WARNING_APPLICATION_RECORDERFULL
       "Settings have been adapted to valid values."    // 0xC0004002  PCO_WARNING_APPLICATION_SETTINGSADAPTED
-    };
+    ];
 
     //const int APPLICATIONWARNING_MSGNUM = sizeof(PCO_ERROR_APPLICATIONWARNING_TXT) / sizeof(PCO_ERROR_APPLICATIONWARNING_TXT[0]);
 
